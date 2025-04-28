@@ -24,9 +24,9 @@ describe('Student Registration page', () => {
     cy.get('label[for="hobbies-checkbox-2"]').contains('Reading').click();
     cy.get('label[for="hobbies-checkbox-3"]').contains('Music').click();
     cy.get('#currentAddress').type('abc street');
-    cy.get('div.css-1wa3eu0-placeholder').contains('Select State').click();
+    cy.get('div').contains('Select State').click();
     cy.contains('div', 'NCR').click();
-    cy.get('div.css-1wa3eu0-placeholder').contains('Select City').click();
+    cy.get('div').contains('Select City').click();
     cy.contains('div', 'Noida').click();
     cy.get('#submit').click();
     // assertion
